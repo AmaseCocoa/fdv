@@ -1,0 +1,12 @@
+[project]
+name = "fediv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "apkit[server]>=0.3.3",
+    "async-lru>=2.0.5",
+    "atproto>=0.0.63",
+    "jinja2>=3.1.6",
+]

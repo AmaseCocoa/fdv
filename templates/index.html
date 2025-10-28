@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fediv</title>
+    <meta name="robots" content="noindex">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>fediv</h1>
+    <p>This is a service that provides badges for Fediverse (ActivityPub and AT Protocol).</p>
+    <h2>API Usage</h2>
+    <p>You can use this service by embedding the following URL in your HTML or Markdown:</p>
+    <p><code>&lt;img src="https://img.shields.io/endpoint?url={{ fdv_host }}/api/&lt;protocol&gt;/&lt;endpoint&gt;?account=&lt;your account&gt;"&gt;</code></p>
+    <h3>Protocols and Endpoints</h3>
+    <h4>ActivityPub</h4>
+    <ul>
+        <li><code>followers</code>: Followers count</li>
+        <li><code>following</code>: Following count</li>
+        <li><code>statuses</code>: Statuses count</li>
+    </ul>
+    <h4>AT Protocol</h4>
+    <ul>
+        <li><code>followers</code>: Followers count</li>
+        <li><code>following</code>: Following count</li>
+        <li><code>posts</code>: Posts count</li>
+        <li><code>profile</code>: Profile</li>
+    </ul>
+    <h3>Example</h3>
+    <p>To get the followers count for the account <code>@example@example.com</code> on an ActivityPub service:</p>
+    <p><code>&lt;img src="https://img.shields.io/endpoint?url={{ fdv_host }}/api/activitypub/followers?account=@example@example.com"&gt;</code></p>
+    
+    <h2>GitHub Repository</h2>
+    <p>The source code for this service is available on GitHub:</p>
+    <p><a href="https://github.com/AmaseCocoa/fdv">https://github.com/AmaseCocoa/fdv</a></p>
+</body>
+</html>
